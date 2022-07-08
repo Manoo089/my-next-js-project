@@ -1,3 +1,74 @@
 .ProductCardOptions {
-    
+  font-family: "Quicksand", sans-serif;
+  margin: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+
+  &__price {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__price > h3 {
+    margin: 0;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+
+    &--size {
+      width: 6vmin;
+      height: 2.5vmin;
+      border: 1px solid rgba(20, 20, 20, 0.1);
+      border-radius: 0.2rem;
+      margin-left: 1rem;
+    }
+
+    &--quantity {
+      width: 6vmin;
+      height: 2.5vmin;
+      border: 1px solid rgba(20, 20, 20, 0.1);
+      border-radius: 0.2rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__selects {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #373737d3;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  &__colors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & > div {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    &--blue {
+      background-color: #1f55af;
+    }
+    &--red {
+      background-color: #da4841;
+    }
+    &--black {
+      background-color: black;
+    }
+  }
 }

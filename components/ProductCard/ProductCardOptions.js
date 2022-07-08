@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../Button/Button";
+
 export default function ProductCardOptions() {
     return (
         <article className="ProductCardOptions">
@@ -8,9 +10,9 @@ export default function ProductCardOptions() {
             </header>
 
             <main className="ProductCardOptions__selects">
-                <div>
+                <div className="ProductCardOptions__select">
                     <label htmlFor="ProductCardOptions__selects--size">Size:</label>
-                        <select id="ProductCardOptions__selects--size">
+                        <select className="ProductCardOptions__select--size">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -18,9 +20,9 @@ export default function ProductCardOptions() {
                         </select>
                 </div>
 
-                <div>
+                <div className="ProductCardOptions__select">
                     <label htmlFor="ProductCardOptions__selects--quantity">Quantity:</label>
-                        <select id="ProductCardOptions__selects--quantity">
+                        <select className="ProductCardOptions__select--quantity">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -28,13 +30,14 @@ export default function ProductCardOptions() {
                         </select>
                 </div>
 
-                <div>
-                    <label htmlFor="ProductCardOptions__selects--colors">Colors:</label>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className="ProductCardOptions__colors">
+                    <label htmlFor="ProductCardOptions__color">Colors:</label>
+                    <div className="ProductCardOptions__colors--blue"></div>
+                    <div className="ProductCardOptions__colors--red"></div>
+                    <div className="ProductCardOptions__colors--black"></div>
                 </div>
             </main>
+            <Button />
         </article>
     )
 }
