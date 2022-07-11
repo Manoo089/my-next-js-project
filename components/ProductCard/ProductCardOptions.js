@@ -37,7 +37,7 @@ export default function ProductCardOptions() {
                     <div className="ProductCardOptions__colors--black"></div>
                 </div>
             </main>
-            <Button />
+            <Button label="Add to Cart" onClick={() => console.log("ProductCard Button wurde geklickt!")} />
         </article>
     )
-}
+};
