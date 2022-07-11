@@ -1,0 +1,16 @@
+.Select {
+  display: flex;
+  align-items: baseline;
+
+  &--dropdown {
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    color: #373737d3;
+  }
+
+  // Sizes
+  .default {
+    width: 50px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../Button/Button";
+import Select from "../Select/Select";
 
 export default function ProductCardOptions() {
     return (
@@ -10,25 +11,8 @@ export default function ProductCardOptions() {
             </header>
 
             <main className="ProductCardOptions__selects">
-                <div className="ProductCardOptions__select">
-                    <label htmlFor="ProductCardOptions__selects--size">Size:</label>
-                        <select className="ProductCardOptions__select--size">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                </div>
-
-                <div className="ProductCardOptions__select">
-                    <label htmlFor="ProductCardOptions__selects--quantity">Quantity:</label>
-                        <select className="ProductCardOptions__select--quantity">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                </div>
+                <Select label="Size" id="size" />
+                <Select label="Quantity" id="quantity" />
 
                 <div className="ProductCardOptions__colors">
                     <label htmlFor="ProductCardOptions__color">Colors:</label>
