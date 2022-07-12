@@ -1,16 +1,48 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const Select = ({ id, label, size = "default" }) => {
+const Select = ({
+  id,
+  label,
+  onChange,
+  productSize = [],
+  productQuantity = [],
+  quantity = false,
+  size = "default",
+  sized = false,
+}) => {
+  const isLabel = label ? label : null;
+  const isSized = sized ? "Size" : null;
+  const isQuantity = quantity ? "Quantity" : null;
+
   return (
     <div className="Select">
-      <label htmlFor={id}>{label}:</label>
-      <select className={["Select--dropdown", [`${size}`]].join(" ")} id={id}>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+      <label htmlFor={id} className="Select--label">
+        {isLabel || isSized || isQuantity}:
+      </label>
+
+      <select
+        className={["Select--dropdown", [`${size}`]].join(" ")}
+        id={id}
+        onChange={onChange}
+      >
+        {isSized &&
+          productSize.map((option, index) => {
+            return (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            );
+          })}
+
+        {isQuantity &&
+          productQuantity.map((option, index) => {
+            return (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            );
+          })}
       </select>
     </div>
   );
@@ -18,6 +50,8 @@ const Select = ({ id, label, size = "default" }) => {
 
 Select.propTypes = {
   label: PropTypes.string,
+  productSize: PropTypes.array,
+  productQuantity: PropTypes.array,
 };
 
 export default Select;

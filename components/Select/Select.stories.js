@@ -13,4 +13,5 @@ export const Template = args => <Select {...args} />;
 export const Base = Template.bind({});
 Base.args = {
   label: "Label",
+  options: ["1", "2", "3", "4", "5"],
 };

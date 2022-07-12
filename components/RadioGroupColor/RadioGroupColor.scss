@@ -1,0 +1,18 @@
+.RadioGroupColor {
+  & input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    cursor: pointer;
+
+    background-color: hotpink;
+    border: 1px solid hotpink;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+    &:checked {
+      outline: 1px solid black;
+    }
+  }
+}
