@@ -8,7 +8,7 @@ const Button = ({ disabled = false, label, onClick }) => {
     }
   };
 
-  const isDisabled = disabled ? "Button--disabled" : null;
+  const isDisabled = disabled ? "Button--disabled" : "";
 
   return (
     <button className={["Button", [`${isDisabled}`]].join(" ")} onClick={onClick}>
