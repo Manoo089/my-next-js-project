@@ -38,11 +38,11 @@ export default function ProductCardOptions({ price, productSize, productQuantity
           <label htmlFor="colors">Colors:</label>
 
           {value.map(v => {
-            <RadioGroupColor name="colors" key={v} value={v.toString()} />;
+            return <RadioGroupColor key={v} name="colors" value={v.toString()} />;
           })}
         </div>
       </main>
       <Button label="Add to Cart" onClick={() => console.log("ProductCard Button wurde geklickt!")} />
     </article>
   );
-}
+};

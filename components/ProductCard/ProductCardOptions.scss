@@ -21,25 +21,25 @@
   &__selects {
     display: flex;
     justify-content: space-between;
-    gap: 30px 10px;
+    gap: 30px 15px;
     flex-wrap: wrap;
     align-items: center;
     color: #373737d3;
     font-weight: 500;
     margin-top: 1rem;
   }
-
+  
   &__colors {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+  }
 
-    & > div {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
+  .Button {
+    margin-top: 16px;
+  }
 
+  .RadioGroupColor {
     &--blue {
       background-color: #1f55af;
     }
@@ -49,9 +49,5 @@
     &--black {
       background-color: black;
     }
-  }
-
-  .Button {
-    margin-top: 16px;
   }
 }

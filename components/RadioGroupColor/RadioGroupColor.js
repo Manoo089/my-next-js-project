@@ -5,7 +5,7 @@ const RadioGroupColor = ({ id, name, onChange, value }) => {
   return (
     <input
       type="radio"
-      className="RadioGroupColor"
+      className={`RadioGroupColor RadioGroupColor--${value}`}
       id={id}
       name={name}
       value={value}
