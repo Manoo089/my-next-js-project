@@ -1,11 +1,13 @@
 import React from "react";
+import Navigation from "../Navigation/Navigation";
 
 const Layout = ({ children }) => {
-    return (
-        <div className="Layout">
-            {children}
-        </div>
-    )
+  return (
+    <>
+      <Navigation />
+      <div className="Layout">{children}</div>
+    </>
+  );
 };
 
 export default Layout;

@@ -1,0 +1,29 @@
+.NavigationButton {
+  border-right: 1px solid rgb(200, 200, 200);
+  padding: 30px;
+  transition: background-color 0.2s ease-in;
+
+  &:last-child {
+    border-right: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 3px 3px rgb(210, 210, 210);
+    text-decoration: underline;
+  }
+
+  &__alink {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+  }
+
+  &--active {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 3px 3px rgb(210, 210, 210);
+    text-decoration: underline;
+  }
+}

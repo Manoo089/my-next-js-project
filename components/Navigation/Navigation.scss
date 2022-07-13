@@ -1,0 +1,21 @@
+.Navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(150, 150, 150);
+  box-shadow: 0px 0px 3px rgb(180, 180, 180);
+  color: white;
+  text-transform: uppercase;
+
+  &__link > img {
+    fill: #000;
+    color: #000;
+  }
+}
+
+.bi {
+  color: black;
+  fill: black;
+}
