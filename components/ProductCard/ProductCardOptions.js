@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Select from "../Select/Select";
 import RadioGroupColor from "../RadioGroupColor/RadioGroupColor";
 
-export default function ProductCardOptions({ price, productSize, productQuantity }) {
+export default function ProductCardOptions({ price, productSize, productQuantity, value }) {
   const handleOnChange = e => {
     console.log(e.target.value);
   };
@@ -34,16 +34,15 @@ export default function ProductCardOptions({ price, productSize, productQuantity
           onChange={handleOnChange}
         />
 
-        { /* ********** TODO generic ********** */}
         <div className="ProductCardOptions__colors">
-          <label htmlFor="ProductCardOptions__color">Colors:</label>
-          <div className="ProductCardOptions__colors--blue"></div>
-          <div className="ProductCardOptions__colors--red"></div>
-          <div className="ProductCardOptions__colors--black"></div>
-          <RadioGroupColor />
+          <label htmlFor="colors">Colors:</label>
+
+          {value.map(v => {
+            <RadioGroupColor name="colors" key={v} value={v.toString()} />;
+          })}
         </div>
       </main>
       <Button label="Add to Cart" onClick={() => console.log("ProductCard Button wurde geklickt!")} />
     </article>
   );
-};
+}

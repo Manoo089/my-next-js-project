@@ -35,7 +35,7 @@ export default function ProductCard() {
               <p className="ProductCard__main--description">{product.description}</p>
             </main>
             <footer className="ProductCard__footer">
-              <ProductCardOptions price={product.price} productSize={product.sizes} productQuantity={product.quantity} />
+              <ProductCardOptions value={product.colors} price={product.price} productSize={product.sizes} productQuantity={product.quantity} />
             </footer>
           </article>
         );

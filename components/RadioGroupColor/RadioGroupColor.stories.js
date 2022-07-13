@@ -9,8 +9,13 @@ export default {
 };
 
 export const Template = args => <RadioGroupColor {...args} />;
+Template.args = {
+  id: "id",
+  name: "radio",
+  value: "radio1",
+};
 
 export const Base = Template.bind({});
 Base.args = {
-  
+  ...Template.args,
 };
