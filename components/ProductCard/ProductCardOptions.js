@@ -2,7 +2,6 @@ import React from "react";
 
 import Button from "../Button/Button";
 import Select from "../Select/Select";
-import RadioGroupColor from "../RadioGroupColor/RadioGroupColor";
 
 export default function ProductCardOptions({ price, productSize, productQuantity, value }) {
   const handleOnChange = e => {
@@ -22,7 +21,7 @@ export default function ProductCardOptions({ price, productSize, productQuantity
   return (
     <article className="ProductCardOptions">
       <header className="ProductCardOptions__price">
-        <h3>{price}</h3>
+        <h3>{price} €</h3>
       </header>
 
       <main className="ProductCardOptions__selects">
@@ -33,16 +32,11 @@ export default function ProductCardOptions({ price, productSize, productQuantity
           productQuantity={quantityCount(productQuantity)}
           onChange={handleOnChange}
         />
-
-        <div className="ProductCardOptions__colors">
-          <label htmlFor="colors">Colors:</label>
-
-          {value.map(v => {
-            return <RadioGroupColor key={v} name="colors" value={v.toString()} />;
-          })}
-        </div>
       </main>
-      <Button label="Add to Cart" onClick={() => console.log("ProductCard Button wurde geklickt!")} />
+      
+      <footer>
+        <Button label="Add to Cart" onClick={() => console.log("ProductCard Button wurde geklickt!")} />
+      </footer>
     </article>
   );
-};
+}

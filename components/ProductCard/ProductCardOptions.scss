@@ -28,26 +28,8 @@
     font-weight: 500;
     margin-top: 1rem;
   }
-  
-  &__colors {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
 
   .Button {
     margin-top: 16px;
-  }
-
-  .RadioGroupColor {
-    &--blue {
-      background-color: #1f55af;
-    }
-    &--red {
-      background-color: #da4841;
-    }
-    &--black {
-      background-color: black;
-    }
   }
 }
