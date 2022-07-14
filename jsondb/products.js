@@ -1,12 +1,15 @@
 const jsondb = {
-    procucts: [
+    products: [
         {
           name: 'Crispy Burger',
           description: 'American Style Burger',
           category: 'Hauptgericht',
           price: 6.99,
           url: 'burger',
-          image: '/images/products/burger.jpg'
+          image: '/images/products/burger.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "Nimm 2, bezahle 1!",
         },
          {
           name: 'Coca Cola',
@@ -18,7 +21,7 @@ const jsondb = {
         },   
         {
           name: 'Erdbeer Eis',
-          beschreibung: 'Eis mit Erdbeeren und Sahne',
+          description: 'Eis mit Erdbeeren und Sahne',
           category: 'Nachspeise',
           price: 2.99,
           url: 'erdbeereis',
