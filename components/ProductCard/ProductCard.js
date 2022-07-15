@@ -10,7 +10,8 @@ export default function ProductCard() {
         {jsondb.products.map(product => {
           return (
             <article className="ProductCard" key={product.name}>
-              <aside className="ProductCard__info">{product.specialOffer}</aside>
+              {product.specialOffer && <aside className="ProductCard__info">{product.specialOffer}</aside>}
+
               <header className="ProductCard__header">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="ProductCard__image" src={`${product.image}`} alt={product.name} />
