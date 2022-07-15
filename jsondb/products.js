@@ -17,7 +17,10 @@ const jsondb = {
           category: 'Trinken',
           price: 1.99,
           url: 'cola',
-          image: '/images/products/cola.jpg'
+          image: '/images/products/cola.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },   
         {
           name: 'Erdbeer Eis',
@@ -25,7 +28,10 @@ const jsondb = {
           category: 'Nachspeise',
           price: 2.99,
           url: 'erdbeereis',
-          image: '/images/products/eis.jpg'
+          image: '/images/products/eis.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },
          {
           name: 'Falaffel',
@@ -33,7 +39,10 @@ const jsondb = {
           category: 'Hauptgericht',
           price: 6.99,
           url: 'falaffel',
-          image: '/images/products/falaffel.jpg'
+          image: '/images/products/falaffel.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },
          {
           name: 'Lahmacun',
@@ -41,7 +50,10 @@ const jsondb = {
           category: 'Hauptgericht',
           price: 4.50,
           url: 'lahmacun',
-          image: '/images/products/lahmacun.jpg'
+          image: '/images/products/lahmacun.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },
          {
           name: 'Lasagne',
@@ -49,7 +61,10 @@ const jsondb = {
           category: 'Hauptgericht',
           price: 8.50,
           url: 'lasagne',
-          image: '/images/products/lasagne.jpg'
+          image: '/images/products/lasagne.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },  
          {
           name: 'Schokoladen Muffin',
@@ -57,7 +72,10 @@ const jsondb = {
           category: 'Nachspeise',
           price: 3.20,
           url: 'muffin',
-          image: '/images/products/muffin.jpg'
+          image: '/images/products/muffin.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },  
          {
           name: 'Pizza Original',
@@ -65,7 +83,10 @@ const jsondb = {
           category: 'Hauptgericht',
           price: 7.50,
           url: 'pizza',
-          image: '/images/products/pizza.jpg'
+          image: '/images/products/pizza.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         }, 
          {
           name: 'Süßkartoffel Pommes',
@@ -73,7 +94,10 @@ const jsondb = {
           category: 'Hauptgericht',
           price: 4.80,
           url: 'pommmes',
-          image: '/images/products/pommes.jpg'
+          image: '/images/products/pommes.jpg',
+          sizes: ["Normal", "XL", "XXL"],
+          quantity: "5",
+          specialOffer: "",
         },                                           
     ]
    }
