@@ -7,10 +7,10 @@ const Navigation = () => {
   return (
     <nav className="Navigation">
       <NavigationButton href="/" label="Startseite" />
-      <NavigationButton href="/vorspeisen" label="Vorspeisen" />
-      <NavigationButton href="/hauptgerichte" label="Hauptgerichte" />
-      <NavigationButton href="/nachspeisen" label="Nachspeisen" />
-      <NavigationButton href="/getränke" label="Getränke" />
+      <NavigationButton href="/vorspeisen/vorspeisen" label="Vorspeisen" />
+      <NavigationButton href="/hauptgerichte/hauptgerichte" label="Hauptgerichte" />
+      <NavigationButton href="/nachspeisen/nachspeisen" label="Nachspeisen" />
+      <NavigationButton href="/getränke/getränke" label="Getränke" />
     </nav>
   );
 };
