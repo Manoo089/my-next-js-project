@@ -10,7 +10,7 @@ const Navigation = () => {
       <NavigationButton href="/vorspeisen/vorspeisen" label="Vorspeisen" />
       <NavigationButton href="/hauptgerichte/hauptgerichte" label="Hauptgerichte" />
       <NavigationButton href="/nachspeisen/nachspeisen" label="Nachspeisen" />
-      <NavigationButton href="/getränke/getränke" label="Getränke" />
+      <NavigationButton href="/drinks/drinks" label="Getränke" />
     </nav>
   );
 };
