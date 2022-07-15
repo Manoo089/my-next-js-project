@@ -18,10 +18,14 @@ export default function ProductCardOptions({ price, productSize, productQuantity
     }
   };
 
+  const formatterPrice = price => {
+    return price.toFixed(2);
+  };
+
   return (
     <article className="ProductCardOptions">
       <header className="ProductCardOptions__price">
-        <h3>{price} €</h3>
+        <h3>{formatterPrice(price)} €</h3>
       </header>
 
       <main className="ProductCardOptions__selects">
