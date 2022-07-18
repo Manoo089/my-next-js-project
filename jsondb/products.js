@@ -74,7 +74,7 @@ const jsondb = {
     },
     {
       name: "Schokoladen Muffin",
-      description: "Sehr süßer Sckoko Muffin",
+      description: "Sehr süßer Schoko Muffin",
       category: "Nachspeise",
       price: 3.2,
       url: "muffin",
