@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../Button/Button";
 import Select from "../Select/Select";
 
-export default function ProductCardOptions({ price, productSize, productQuantity, value }) {
+export default function ProductCardOptions({ price, productSize, productQuantity }) {
   const handleOnChange = e => {
     console.log(e.target.value);
   };
@@ -35,6 +35,7 @@ export default function ProductCardOptions({ price, productSize, productQuantity
           quantity
           productQuantity={quantityCount(productQuantity)}
           onChange={handleOnChange}
+          size="s"
         />
       </main>
       
