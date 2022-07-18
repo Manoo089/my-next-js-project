@@ -35,6 +35,7 @@ export default function ProductCardOptions({ price, productSize, productQuantity
           quantity
           productQuantity={quantityCount(productQuantity)}
           onChange={handleOnChange}
+          size="s"
         />
       </main>
       

@@ -8,7 +8,7 @@ const Select = ({
   productSize = [],
   productQuantity = [],
   quantity = false,
-  size = "default",
+  size = 'default' || 's' || 'l',
   sized = false,
 }) => {
   const isLabel = label ? label : null;
@@ -26,6 +26,16 @@ const Select = ({
         id={id}
         onChange={onChange}
       >
+
+        {isLabel && 
+          productSize.map((option, index) => {
+            return (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            )
+          })}
+
         {isSized &&
           productSize.map((option, index) => {
             return (
@@ -49,9 +59,12 @@ const Select = ({
 };
 
 Select.propTypes = {
+  isSized: PropTypes.bool,
+  isQuantity: PropTypes.bool,
   label: PropTypes.string,
   productSize: PropTypes.array,
   productQuantity: PropTypes.array,
+  size: PropTypes.oneOf(['default', 'l', 's']),
 };
 
 export default Select;
