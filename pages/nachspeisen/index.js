@@ -1,19 +1,14 @@
-import jsondb from "../../jsondb/products";
 import Grid from "../../components/Grid/Grid";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
-export default function Nachspeisen() {
-  const filtered = jsondb.products.filter(x => {
-    return x.category === "Nachspeise";
-  });
-
+export default function Nachspeisen({ desserts }) {
   return (
     <Grid>
-      {filtered.map((product, index) => {
-        const { name, image, specialOffer, price, quantity, sizes, description } = product;
+      {desserts.map(product => {
+        const { _id, name, image, specialOffer, price, quantity, sizes, description } = product;
         return (
           <ProductCard
-            key={index}
+            key={_id}
             name={name}
             image={image}
             specialOffer={specialOffer}
@@ -26,4 +21,19 @@ export default function Nachspeisen() {
       })}
     </Grid>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/api/speisen/Nachspeise");
+  const desserts = await res.json();
+
+  return {
+    props: {
+      desserts,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
+  };
 }

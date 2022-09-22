@@ -1,11 +1,5 @@
-const jsondb = {
-  categories: [
-    { name: "Vorspeisen", url: "vorspeisen" },
-    { name: "Hauptgerichte", url: "hauptgerichte" },
-    { name: "Nachspeisen", url: "nachspeisen" },
-    { name: "Getränke", url: "drinks" },
-  ],
-  products: [
+const jsondb = 
+[
     {
       name: "Crispy Burger",
       description: "American Style Burger",
@@ -105,6 +99,5 @@ const jsondb = {
       quantity: "5",
       specialOffer: "",
     },
-  ],
-};
+  ]
 export default jsondb;
